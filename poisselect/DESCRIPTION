@@ -1,0 +1,21 @@
+Package: poisselect
+Type: Package
+Title: Poisson Selection Model for Count Data
+Version: 0.1.0
+Authors@R: person("Finn", "Metzler", role = c("aut", "cre"),
+    email = "finn.metzler@stud.uni-bamberg.de")
+Description: Maximum likelihood estimation of a Poisson selection model for
+    count data that are only observed for a selected subsample. The outcome
+    equation is a Poisson regression with a log-normal heterogeneity term,
+    the selection equation is a probit, and the two error terms are jointly
+    normal. The likelihood integral is approximated by Gauss-Hermite
+    quadrature and evaluated on the log scale with the log-sum-exp trick.
+    Includes print, summary, plot, predict, coef, vcov and logLik methods
+    and a data simulator for the model.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports: checkmate, stats, graphics, utils
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.0
